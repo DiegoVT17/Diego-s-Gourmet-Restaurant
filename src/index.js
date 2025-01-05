@@ -1,3 +1,5 @@
 import "./styles.css";
+import initialPage from "./pages/home.js";
 
-console.log("Hello World!");
+const content = document.querySelector(".content");
+content.append(initialPage());
