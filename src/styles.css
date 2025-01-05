@@ -48,15 +48,23 @@ nav button:hover {
 }
 
 .container {
-  margin-top: 20px;
+  margin: 20px auto;
+  width: 1000px;
+  color: #030712;
 }
 
 .container h1 {
   text-align: center;
 }
 
+.container p {
+  margin: 20px 0;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
 .text-container {
-  width: 1000px;
   margin: 40px auto;
   display: flex;
   gap: 40px;
@@ -78,7 +86,7 @@ nav button:hover {
   font-style: italic;
 }
 
-.lomo-saltado {
+.lima {
   width: 350px;
   height: auto;
   border-radius: 50%;
