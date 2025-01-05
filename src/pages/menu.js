@@ -2,21 +2,20 @@ import data from "./menu.json";
 
 const menuData = data.menu;
 
-export default function createTitle() {
-  const h1 = document.createElement("h1");
+export default function menuPage() {
   const main = document.createElement("div");
   const dishContainer = createDishesContainer();
 
-  h1.innerHTML = "Menu";
   main.classList.add("container");
-  main.append(h1, dishContainer);
+  main.classList.add("menu");
+  main.append(dishContainer);
   return main;
 }
 
 function createDishesContainer() {
   const dishContainer = document.createElement("div");
 
-  dishContainer.classList.add("grid");
+  dishContainer.classList.add("dish-co");
 
   const menuLength = Object.keys(menuData).length;
   for (let i = 0; i < menuLength; i++) {
@@ -33,9 +32,13 @@ function createCard(type) {
   const title = document.createElement("h2");
 
   title.innerHTML = type;
+
+  div.classList.add("card-container");
+  title.classList.add("title");
   div.append(title);
 
   for (let i = 0; i < menuData[type].length; i++) {
+    const card = document.createElement("div");
     const dishName = document.createElement("h3");
     const dishDesc = document.createElement("p");
     const dishPrice = document.createElement("small");
@@ -45,7 +48,9 @@ function createCard(type) {
     dishDesc.innerHTML = menuData[type][i].description;
     dishPrice.innerHTML = `$${menuData[type][i].price.toFixed(2)}`;
 
-    div.append(dishName, dishDesc, dishPrice);
+    card.classList.add("card");
+    card.append(dishName, dishDesc, dishPrice);
+    div.append(card);
   }
 
   return div;

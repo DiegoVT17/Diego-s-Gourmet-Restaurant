@@ -2,7 +2,7 @@ import lima from "../img/lima.jpg";
 import ingredients from "../img/ingredients.jpg";
 import lomo from "../img/lomo.jpg";
 
-export default function initialPage() {
+export default function homePage() {
   const div = document.createElement("div");
   const title = document.createElement("h1");
   const initial = document.createElement("p");
