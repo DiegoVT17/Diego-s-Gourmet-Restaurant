@@ -10,6 +10,7 @@ body {
   background-color: #9ca3af;
 }
 
+/* main page */
 header {
   padding: 20px;
   display: flex;
@@ -55,6 +56,8 @@ nav button:hover {
 
 .container h1 {
   text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
 }
 
 .container p {
@@ -102,3 +105,5 @@ nav button:hover {
   margin-left: 0;
   margin-right: 30px;
 }
+
+/* Menu page */
