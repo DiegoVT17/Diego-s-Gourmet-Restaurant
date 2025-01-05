@@ -1,6 +1,7 @@
 import "./styles.css";
 import homePage from "./pages/home.js";
 import menuPage from "./pages/menu.js";
+import aboutPage from "./pages/about.js";
 
 const main = document.querySelector(".content");
 const btns = document.querySelectorAll("button");
@@ -18,6 +19,10 @@ btns.forEach((btn) =>
     } else if (currentTab.getAttribute("class") === "menu") {
       main.innerHTML = "";
       main.append(menuPage());
+      btn.classList.add("active");
+    } else if (currentTab.getAttribute("class") === "about") {
+      main.innerHTML = "";
+      main.append(aboutPage());
       btn.classList.add("active");
     }
   })
