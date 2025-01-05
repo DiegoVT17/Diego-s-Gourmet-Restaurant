@@ -1,20 +1,26 @@
 import "./styles.css";
-import initialPage from "./pages/home.js";
-import createTitle from "./pages/menu.js";
+import homePage from "./pages/home.js";
+import menuPage from "./pages/menu.js";
 
 const main = document.querySelector(".content");
-const nav = document.querySelector("nav");
+const btns = document.querySelectorAll("button");
 
-main.append(initialPage());
+btns.forEach((btn) =>
+  btn.addEventListener("click", (e) => {
+    const currentTab = e.target;
 
-nav.addEventListener("click", (e) => {
-  const render = e.target.getAttribute("class");
+    btns.forEach((btn) => btn.classList.remove("active"));
 
-  if (render === "home") {
-    main.innerHTML = "";
-    main.append(initialPage());
-  } else if (render === "menu") {
-    main.innerHTML = "";
-    main.append(createTitle());
-  }
-});
+    if (currentTab.getAttribute("class") === "home") {
+      main.innerHTML = "";
+      main.append(homePage());
+      btn.classList.add("active");
+    } else if (currentTab.getAttribute("class") === "menu") {
+      main.innerHTML = "";
+      main.append(menuPage());
+      btn.classList.add("active");
+    }
+  })
+);
+
+main.append(homePage());
