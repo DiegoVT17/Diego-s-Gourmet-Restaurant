@@ -1,0 +1,101 @@
+{
+  "restaurant": "Peru Gourmet",
+  "tagline": "Fine Peruvian Dining",
+  "menu": {
+    "Appetizers": [
+      {
+        "name": "Causa Limeña",
+        "description": "Yellow potato puree layered with avocado, chicken, and aji amarillo sauce.",
+        "price": 12
+      },
+      {
+        "name": "Anticuchos de Corazón",
+        "description": "Grilled beef heart skewers served with chimichurri and roasted Peruvian corn.",
+        "price": 14
+      },
+      {
+        "name": "Tiradito de Ají Amarillo",
+        "description": "Sashimi-style fish in a tangy aji amarillo and lime marinade.",
+        "price": 16
+      }
+    ],
+    "Soups & Salads": [
+      {
+        "name": "Aguadito de Pollo",
+        "description": "Traditional cilantro-infused chicken soup with rice and vegetables.",
+        "price": 10
+      },
+      {
+        "name": "Ensalada de Quinua",
+        "description": "Quinoa salad with mango, avocado, cherry tomatoes, and rocoto dressing.",
+        "price": 11
+      }
+    ],
+    "Main Courses": [
+      {
+        "name": "Lomo Saltado",
+        "description": "Stir-fried beef tenderloin with onions, tomatoes, and soy sauce, served with rice and fries.",
+        "price": 24
+      },
+      {
+        "name": "Ají de Gallina",
+        "description": "Shredded chicken in a creamy aji amarillo and walnut sauce, served with rice and boiled potatoes.",
+        "price": 22
+      },
+      {
+        "name": "Ceviche Clásico",
+        "description": "Fresh fish marinated in lime juice, red onions, and cilantro, served with sweet potato and choclo.",
+        "price": 25
+      },
+      {
+        "name": "Arroz con Mariscos",
+        "description": "Peruvian-style seafood paella with shrimp, scallops, and calamari, seasoned with aji panca.",
+        "price": 28
+      },
+      {
+        "name": "Seco de Cordero",
+        "description": "Slow-cooked lamb shank in cilantro and chicha de jora sauce, served with canary beans and rice.",
+        "price": 26
+      }
+    ],
+    "Desserts": [
+      {
+        "name": "Suspiro a la Limeña",
+        "description": "A rich dulce de leche and meringue parfait, sprinkled with cinnamon.",
+        "price": 8
+      },
+      {
+        "name": "Alfajores",
+        "description": "Shortbread cookies filled with creamy dulce de leche.",
+        "price": 6
+      },
+      {
+        "name": "Helado de Lucuma",
+        "description": "Peruvian lucuma ice cream, a tropical and caramel-like delight.",
+        "price": 7
+      }
+    ],
+    "Beverages": [
+      {
+        "name": "Chicha Morada",
+        "description": "Purple corn drink spiced with cinnamon and cloves.",
+        "price": 4
+      },
+      {
+        "name": "Pisco Sour",
+        "description": "Peru’s iconic cocktail made with Pisco, lime juice, simple syrup, and egg white.",
+        "price": 12
+      },
+      {
+        "name": "Inka Kola",
+        "description": "The golden Peruvian soda.",
+        "price": 3
+      },
+      {
+        "name": "Espresso Perú",
+        "description": "Specialty coffee grown in the Andes.",
+        "price": 4
+      }
+    ]
+  }
+}
