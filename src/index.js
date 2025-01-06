@@ -1,7 +1,7 @@
 import "./styles.css";
 import homePage from "./pages/home.js";
 import menuPage from "./pages/menu.js";
-import aboutPage from "./pages/about.js";
+import reservationPage from "./pages/reservation.js";
 
 const main = document.querySelector(".content");
 const btns = document.querySelectorAll("button");
@@ -22,7 +22,7 @@ btns.forEach((btn) =>
       btn.classList.add("active");
     } else if (currentTab.getAttribute("class") === "about") {
       main.innerHTML = "";
-      main.append(aboutPage());
+      main.append(reservationPage());
       btn.classList.add("active");
     }
   })
